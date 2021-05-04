@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<canvas id="myCanvas" width="800" height="550" style="border:1px solid #d3d3d3;">
+
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
+<script>
+	const width = 130,
+			height = 550,
+			space = 3.33;
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect((width * 0) + (space * 0), 0, width, 550);
+ctx.fillStyle = "orange";
+ctx.fillRect((width * 1) + (space * 1), 0, width, 550);
+ctx.fillStyle = "yellow";
+ctx.fillRect((width * 2) + (space * 2), 0, width, 550);
+ctx.fillStyle = "green";
+ctx.fillRect((width * 3) + (space * 3), 0, width, 550);
+ctx.fillStyle = "blue";
+ctx.fillRect((width * 4) + (space * 4), 0, width, 550);
+ctx.fillStyle = "purple";
+ctx.fillRect((width * 5) + (space * 5), 0, width, 550);
+
+
+var fruit, i, x = "";
+
+fruit = {
+ "type": [
+	{name:"Apple", quantity:20, color:"red"},
+	{name:"Orange", quantity:10, color:"orange"}
+	{name:"Banana", quantity:15, color:"yellow"},
+	{name:"Kiwi", quantity:3, color:"green"}
+	{name:"Blueberry", quantity:5, color:"blue"},
+	{name:"Grapes", quantity:8, color:"purple"}
+	]
+}
+
+</script>
+
+<script>
+	function changeCanvasColor () {
+		// Locate the element "myCanvas" in the document
+		var canvas = document.getElementById("myCanvas");
+		var context.fillRect(0,0, canvas.width, canvas.height);
+
+		context.font="30px Arial";
+		context.fillStyle = "blue";
+		var line = 1;
+		var height = 35;
+		context.fillText("Hello World", 10, height * line);
+		line++;
+		context.fillText("Welcome", 10, height*line);
+		line++;
+		context.fillText(":)", 10, height * line);
+	}
+</script>
+
+</body>
+</html>
